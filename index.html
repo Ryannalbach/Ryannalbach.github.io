@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--memorize this template, important toknow every part and why it is doing that-->
+
 <html lang="en">
 <Head>
 <meta charset="utf-8">
@@ -7,29 +7,63 @@
 <!--<meta http-equiv="X-UA-Compatible" content="ie=edge">this is no longer needed-->
 <link rel="stylesheet" href="styles/style.css">
 <body>
-<!--this is an html comment-->
-    <h1>Ryan Nalbach's Portfolio</h1>
-
-    <header>
-        <nav>
-            <!--creat a page and link for each of these-->
-            <ul class="nav-list">
-            <li><a href="./index.html" target="_blank"><button>Home</button></a></li>
-            <li><a href="./about.html" target="_blank"><button>About me</button></a></li>
-            <li><a href="./projects.html" target="_blank"><button>projects</button></a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-<!--create actual content for a page-->
-    <div class="top-section">
-        <p>this is a div which is short for division. I wanted to add some classes to This</p>
-
-        <p>This is div #2. Create more text to highlight <span>this is the span</span></p>
     
-        <p>this is our box class div and lets see what we can do to it</p>
+    <title>Ryan Nalbach's portfolio</title>
+    
+    
+    <body>
+      <header>Ryan Nalbach's Portfolio</header>
+      <div id="main">
+        <article>Welcome to my portfolio Index page, here you will find all the info you need to see the projects I'm working on.
+            I mainly use MERN stack for JS and some light Python, I can create HTML with fully active CSS for UI and JS for functionality.
+            If you would like to see the actual code you can go to my Github profile and look at my repositories. Currently there are some
+            projects from MIT which are licensed from them for use and for more information regarding this there are some README files attached to
+            the repositories that use those license. Feel free to reach out to me for any more information.
+            <img src="./images/portrait.JPG" width="500px" height="auto" alt="picture of me">
+            
+        </article>
+        <nav>
+            <button data-modal-target="#modal">About Me</button>
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">About Me</div>
+      <button data-close-button class="close-button">&times;</button>
     </div>
+    <div class="modal-body">
+        Hello my name is Ryan Nalbach, I am currently studying software programming in Java Script.
+            I am taking the MIT course for Full Stack MERN and will complete the certificate program in March of 2023.
+            I have written a few programs here to demonstrate what I have come to understand so far in this program.
+            I wrote this page using CSS and HTML to show an understanding of the grid layout.
+            The projects page I used bootstrap to create a carousel that rotates the projects and a layout to demonstrate an understanding of using bootstrap.
+            I have made additional pages and script links plus my github and linkedin links to see all my repositories and blogs.
+            I have linked a youtube video which I will update as I move along in this course.
+      </div>
+  </div>
+  <div id="overlay"></div>
+                <a href="./index.html" target="_blank"><button class="navbut">Home</button></a>
+            <br>
+                <a href="./projects.html" target="_blank"><button class="navbut">projects</button></a>
+                <br>
+                <a href="./blog.html" target="_blank"><button class="navbut">Blog</button></a>
+                <br>
+                <a href="./contact.html" target="_blank"><button class="navbut">Contact</button></a>
+                
+        </nav>
+        <aside>
+            <p>Here is a link to my Youtube video<a href="https://youtu.be/-JiVtnrfkuE">MIT video</a></p>
+            <p>connect on <span> linked in <a href="https://www.linkedin.com/in/ryan-nalbach-8b86a4215/" class="link">Ryan Nalbach</a></span></p>
+    
+            <p>This is a link to my repositories <span>Here is my Github profile <a href="https://github.com/Ryannalbach" class="link">Ryan Nalbach</a></span></p>
+        </aside>
+      </div>
+      <footer>
+        <div class="footer1">
+        <p class="float-end"><a href="./index.html"><button>Back to the top</button></a></p>
+        <p>&copy; 2017–2022 Ryan, Inc. &middot; <a href="./privacy.html"><buuton>Privacy</buuton></a> &middot; <a href="./terms.html"><button>Terms</button></a></p>
+        </div>
+      </footer>
+
+    
     <!--Create a button that pops when hovered-->
     <!--Write one script that functions-->
     <script src="js/script.js">
